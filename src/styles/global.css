@@ -29,7 +29,7 @@ body {
 }
 
 :where(.css-dev-only-do-not-override-i94ubs).ant-radio-wrapper .ant-radio-checked .ant-radio-inner::after {
-  opacity: 0;
+  opacity: 0 !important;
 }
 
 .ant-checkbox-inner {
@@ -37,21 +37,21 @@ body {
 }
 
 :where(.css-dev-only-do-not-override-i94ubs).ant-checkbox-wrapper:hover .ant-checkbox:after {
-  display: none;
+  display: none !important;
 }
 
 :where(.css-dev-only-do-not-override-i94ubs).ant-checkbox-checked .ant-checkbox-inner:after {
-  border: none;
+  border: none !important;
 }
 
 :where(.css-dev-only-do-not-override-i94ubs).ant-radio-wrapper,
 :where(.css-dev-only-do-not-override-i94ubs).ant-checkbox-wrapper {
-  color: #979797;
+  color: #979797 !important;
 }
 
 .ant-radio-wrapper-checked,
 .ant-checkbox-wrapper-checked {
-  color: #000;
+  color: #000 !important;
 }
 
 :where(.css-dev-only-do-not-override-i94ubs).ant-radio-wrapper-disabled {
@@ -60,8 +60,8 @@ body {
 
 :where(.css-dev-only-do-not-override-i94ubs).ant-switch,
 :where(.css-dev-only-do-not-override-i94ubs).ant-switch:hover:not(.ant-switch-disabled) {
-  background: transparent;
-  outline: 2px solid #D4CCF7;
+  background: transparent !important;
+  outline: 2px solid #D4CCF7 !important;
 }
 
 .ant-switch-handle::before {
@@ -80,7 +80,7 @@ body {
 
 .ant-radio-wrapper-checked.ant-radio-wrapper-disabled .ant-radio-inner,
 .ant-checkbox-wrapper-checked.ant-checkbox-wrapper-disabled .ant-checkbox-inner {
-  background-color: #979797;
+  background-color: #979797 !important;
 }
 
 .ant-btn-primary:disabled {
