@@ -1,0 +1,89 @@
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+:where(.css-dev-only-do-not-override-i94ubs).ant-radio-wrapper .ant-radio-checked .ant-radio-inner::after {
+  opacity: 0;
+}
+
+.ant-checkbox-inner {
+  border-radius: 50% !important;
+}
+
+:where(.css-dev-only-do-not-override-i94ubs).ant-checkbox-wrapper:hover .ant-checkbox:after {
+  display: none;
+}
+
+:where(.css-dev-only-do-not-override-i94ubs).ant-checkbox-checked .ant-checkbox-inner:after {
+  border: none;
+}
+
+:where(.css-dev-only-do-not-override-i94ubs).ant-radio-wrapper,
+:where(.css-dev-only-do-not-override-i94ubs).ant-checkbox-wrapper {
+  color: #979797;
+}
+
+.ant-radio-wrapper-checked,
+.ant-checkbox-wrapper-checked {
+  color: #000;
+}
+
+:where(.css-dev-only-do-not-override-i94ubs).ant-radio-wrapper-disabled {
+  color: rgba(0, 0, 0, 0.25) !important;
+}
+
+:where(.css-dev-only-do-not-override-i94ubs).ant-switch,
+:where(.css-dev-only-do-not-override-i94ubs).ant-switch:hover:not(.ant-switch-disabled) {
+  background: transparent;
+  outline: 2px solid #D4CCF7;
+}
+
+.ant-switch-handle::before {
+  background: #6B47ED !important;
+}
+
+.ant-switch-checked .ant-switch-handle::before {
+  background: #fff !important;
+}
+
+.ant-btn-lg {
+  padding: 8px 70px !important;
+  height: 60px !important;
+  border-radius: 40px !important;
+}
+
+.ant-radio-wrapper-checked.ant-radio-wrapper-disabled .ant-radio-inner,
+.ant-checkbox-wrapper-checked.ant-checkbox-wrapper-disabled .ant-checkbox-inner {
+  background-color: #979797;
+}
+
+.ant-btn-primary:disabled {
+  background-color: #D4CCF7 !important;
+  color: #fff !important;
+}
